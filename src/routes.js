@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { CircularProgress } from "@material-ui/core";
 
 // Otimizando os componentes
-const Login = lazy(() => import("./pages/Login/login"));
+// const Login = lazy(() => import("./pages/Login/login"));
 
 function Routes() {
   return (

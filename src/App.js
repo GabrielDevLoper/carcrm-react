@@ -1,12 +1,13 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
-import { Button, TextField, Select } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { MdPayment } from "react-icons/md";
+import "./global.css";
 
 import Routes from "./routes";
+
+import { Loading } from "./view/components";
 
 const theme = createMuiTheme({
   palette: {
@@ -32,6 +33,7 @@ function App() {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
+        <Loading />
         <Routes />
       </ThemeProvider>
     </Provider>
