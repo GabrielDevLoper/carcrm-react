@@ -1,4 +1,6 @@
 import React from "react";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 import { Button, TextField, Select } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -28,9 +30,11 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Routes />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Routes />
+      </ThemeProvider>
+    </Provider>
   );
 }
 
