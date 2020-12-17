@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, TextField, Select } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { MdPayment } from "react-icons/md";
 
 const theme = createMuiTheme({
   palette: {
@@ -25,12 +27,8 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <h1>Olá mundo</h1>
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
-
-      <TextField />
+      <h1 class="text-danger">Olá mundo</h1>
+      <MdPayment style={{ fontSize: 50, color: "red" }} />
     </ThemeProvider>
   );
 }
