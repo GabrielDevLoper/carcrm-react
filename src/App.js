@@ -4,6 +4,8 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MdPayment } from "react-icons/md";
 
+import Routes from "./routes";
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -27,8 +29,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <h1 class="text-danger">Olá mundo</h1>
-      <MdPayment style={{ fontSize: 50, color: "red" }} />
+      <Routes />
     </ThemeProvider>
   );
 }
