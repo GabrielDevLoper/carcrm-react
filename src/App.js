@@ -7,7 +7,7 @@ import "./global.css";
 
 import Routes from "./routes";
 
-import { Loading, Notify, Alert } from "./view/components";
+import { Loading, Notify, Alert, Confirm } from "./view/components";
 
 const theme = createMuiTheme({
   palette: {
