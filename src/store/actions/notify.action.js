@@ -1,8 +1,8 @@
 export const actionTypes = {
-  CHANGE: "CHANGE_LOADING",
+  CHANGE: "CHANGE_NOTIFY",
 };
 
-export const changeLoading = (payload) => ({
+export const changeNotify = (payload) => ({
   type: actionTypes.CHANGE,
   payload,
 });

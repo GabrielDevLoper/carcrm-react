@@ -7,7 +7,7 @@ import "./global.css";
 
 import Routes from "./routes";
 
-import { Loading } from "./view/components";
+import { Loading, Notify } from "./view/components";
 
 const theme = createMuiTheme({
   palette: {
@@ -34,6 +34,7 @@ function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <Loading />
+        <Notify />
         <Routes />
       </ThemeProvider>
     </Provider>
