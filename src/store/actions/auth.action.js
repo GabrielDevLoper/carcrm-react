@@ -38,7 +38,7 @@ export const login = (credentials) => (dispatch) => {
   return Http.post("oauth/token", {
     grant_type: "password",
     client_id: 2,
-    client_secret: M82vB3fRRaWeBUCIRnD7oWxJe1xod59YWTBcgtDR,
+    client_secret: "M82vB3fRRaWeBUCIRnD7oWxJe1xod59YWTBcgtDR",
     username: credentials.email,
     password: credentials.password,
   })

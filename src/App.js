@@ -12,7 +12,7 @@ import { Loading, Notify, Alert, Confirm } from "./view/components";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#ff4400",
+      main: "#2196f3",
     },
   },
 
