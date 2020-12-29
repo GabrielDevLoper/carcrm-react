@@ -1,6 +1,7 @@
 import { Http } from "../../config/Http";
 import { changeLoading } from "../actions/loading.action";
 import { changeNotify } from "./notify.action";
+
 export const actionTypes = {
   CHANGE: "CHANGE_AUTH",
   SUCCESS: "SUCCESS_AUTH",

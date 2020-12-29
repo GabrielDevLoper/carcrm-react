@@ -2,7 +2,7 @@ import { actionTypes } from "../actions/notify.action";
 
 const initialState = {
   open: false,
-  horizontal: "cente",
+  horizontal: "center",
   vertical: "top",
   class: "success",
   time: 3000,
