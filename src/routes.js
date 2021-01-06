@@ -2,9 +2,10 @@ import React, { Suspense, lazy } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { CircularProgress } from "@material-ui/core";
 
-// Otimizando os componentes
+// Otimizando os componentes, para eles serem renderizados
 const Auth = lazy(() => import("./view/auth"));
 const Register = lazy(() => import("./view/register"));
+const Vehicles = lazy(() => import("./view/vehicles"));
 
 function Routes() {
   return (
@@ -20,7 +21,7 @@ function Routes() {
           <Route path="/login" component={Auth} />
           <Route exact path="/" component={Auth} />
           <Route path="/registrar" component={Register} />
-          <Route exact path="/veiculos" component={() => <h1>Veiculos</h1>} />
+          <Route exact path="/veiculos" component={Vehicles} />
         </Switch>
       </Suspense>
     </Router>
